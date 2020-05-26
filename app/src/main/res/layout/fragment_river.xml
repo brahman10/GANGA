@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp"
+    android:background="@drawable/newback"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnganga"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/buttonback"
+                android:scaleType="fitXY"
+                android:text="GANGA"
+                android:layout_marginTop="10dp"
+                android:textColor="#ffffff"
+                android:textSize="50dp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/btngomti"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/buttonback"
+                android:scaleType="fitXY"
+                android:text="GOMTI"
+                android:textColor="#ffffff"
+                android:layout_marginTop="10dp"
+                android:textSize="50dp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/btnghag"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/buttonback"
+                android:scaleType="fitXY"
+                android:text="GHAGHARA"
+                android:textColor="#ffffff"
+                android:layout_marginTop="10dp"
+                android:textSize="50dp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/btngandak"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/buttonback"
+                android:padding="20dp"
+                android:scaleType="fitXY"
+                android:layout_marginTop="10dp"
+                android:text="GANDAK"
+                android:textColor="#ffffff"
+                android:textSize="50dp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/btnramg"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/buttonback"
+                android:scaleType="fitXY"
+                android:text="RAMGANGA"
+                android:layout_marginTop="10dp"
+                android:textColor="#ffffff"
+                android:textSize="50dp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/btnkosi"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/buttonback"
+                android:scaleType="fitXY"
+                android:layout_marginTop="10dp"
+                android:text="KOSI"
+                android:textColor="#ffffff"
+                android:textSize="50dp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/btnmaha"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/buttonback"
+                android:scaleType="fitXY"
+                android:layout_marginTop="10dp"
+                android:text="MAHANANDA"
+                android:textColor="#ffffff"
+                android:textSize="50dp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/btnyam"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/buttonback"
+                android:scaleType="fitXY"
+                android:text="YAMUNA"
+                android:layout_marginTop="10dp"
+                android:textColor="#ffffff"
+                android:textSize="50dp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/btnson"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/buttonback"
+                android:scaleType="fitXY"
+                android:layout_marginTop="10dp"
+                android:text="SON"
+                android:textColor="#ffffff"
+                android:textSize="50dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnpun"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/buttonback"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                android:text="PUNPUN"
+                android:textColor="#ffffff"
+                android:textSize="50dp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/btntamsa"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/buttonback"
+                android:scaleType="fitXY"
+                android:text="TAMSA"
+                android:layout_marginTop="10dp"
+                android:textColor="#ffffff"
+                android:textSize="50dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

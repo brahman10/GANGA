@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:layout_height="match_parent"
+    tools:context=".galleryUpload">
+
+    <Button
+        android:id="@+id/btnchs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose File" />
+
+    <EditText
+        android:id="@+id/text_file"
+        android:layout_width="219dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="-8dp"
+        android:enabled="false" />
+
+    <ImageView
+        android:id="@+id/imgview"
+        android:layout_width="395dp"
+        android:layout_height="384dp"
+        android:layout_above="@+id/prgsbar"
+        android:layout_below="@id/text_file"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="101dp" />
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:id="@+id/prgsbar"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_above="@+id/btnupload"
+        android:progressDrawable="@drawable/greenprogress"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload"
+        android:id="@+id/btnupload"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"/>
+
+    <TextView
+        android:id="@+id/txtshw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Gallery"
+        android:textSize="16sp"
+        android:layout_alignBaseline="@+id/btnupload"
+        android:layout_alignBottom="@+id/btnupload"
+        android:layout_marginStart="25dp"
+        android:layout_toEndOf="@+id/btnupload"/>
+
+
+</RelativeLayout>

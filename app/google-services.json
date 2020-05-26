@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "761680952297",
+    "firebase_url": "https://ganga-9651a.firebaseio.com",
+    "project_id": "ganga-9651a",
+    "storage_bucket": "ganga-9651a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:761680952297:android:bad0ec61c76defe2b6e978",
+        "android_client_info": {
+          "package_name": "com.example.ganga"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "761680952297-dng5inv7bm8m8b7tga1rk5o3sum3h7um.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ganga",
+            "certificate_hash": "31f4cefbc39e42fc116dfcdc186f3c461e1d4c4a"
+          }
+        },
+        {
+          "client_id": "761680952297-8r6e92eu55vbtlae1o7u4iol1r5n76p3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuQGI4EABIYOmoYM_82GRwtcd3sxiJ5UU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "761680952297-8r6e92eu55vbtlae1o7u4iol1r5n76p3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
