@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#000000"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:layout_above="@+id/pay"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:text="DONATE USING" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/pay"
+        android:layout_centerVertical="true">
+        <ImageView
+            android:id="@+id/upi"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/upi"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:layout_centerVertical="true"/>
+        <ImageView
+            android:id="@+id/debit"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/debit"
+            android:layout_weight="1"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@+id/upi"/>
+        <ImageView
+            android:id="@+id/mobile"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/mobile"
+            android:layout_weight="1"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@+id/debit"/>
+    </LinearLayout>
+</RelativeLayout>

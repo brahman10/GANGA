@@ -186,6 +186,25 @@ public class Main2Activity extends AppCompatActivity implements NavigationView.O
             fragmentTransaction.commit();
         }
 
+        if(menuItem.getItemId()==R.id.nav_conti)
+        {
+
+            fragmentManager = getSupportFragmentManager();
+            fragmentTransaction=fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.container_fragment,new DonateFragment());
+            fragmentTransaction.commit();
+        }
+
+        if(menuItem.getItemId()==R.id.nav_profile)
+        {
+
+            fragmentManager = getSupportFragmentManager();
+            fragmentTransaction=fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.container_fragment,new ProfileFragment());
+            fragmentTransaction.commit();
+        }
+
+
         drawerLayout.closeDrawer(GravityCompat.START);
         return true;
     }

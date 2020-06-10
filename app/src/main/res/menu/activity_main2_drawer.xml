@@ -27,6 +27,10 @@
             android:id="@+id/nav_conti"
             android:title="Contribute For Ganga"
             android:icon="@drawable/ic_attach_money_black_24dp"/>
+        <item
+            android:id="@+id/nav_profile"
+            android:title="Profile"
+            android:icon="@drawable/ic_person_black_24dp"/>
     </group>
     <item android:title="Communication">
         <menu>

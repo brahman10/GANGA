@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_marginTop="40dp"
+    android:layout_marginTop="40sp"
     android:layout_height="match_parent"
     android:background="@drawable/newback">
 
@@ -22,8 +22,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="4dp"
+                android:layout_marginStart="8sp"
+                android:layout_marginTop="4sp"
                 android:text="GHaT"
                 android:textColor="#006400"
                 android:textAlignment="center"
@@ -32,8 +32,8 @@
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="match_parent"
-                android:layout_height="43dp"
-                android:layout_marginTop="5dp"
+                android:layout_height="43sp"
+                android:layout_marginTop="5sp"
                 android:text="Ganga Heritage and Tributaries"
                 android:textColor="#008000"
                 android:textAlignment="center"
@@ -41,10 +41,10 @@
 
             <ImageView
                 android:id="@+id/imageView3"
-                android:layout_width="299dp"
-                android:layout_height="314dp"
+                android:layout_width="299sp"
+                android:layout_height="314sp"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="5sp"
                 android:focusable="true"
                 android:src="@drawable/logo1" />
 
@@ -53,8 +53,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
-                android:layout_marginTop="5dp"
-                android:padding="3dp"
+                android:layout_marginTop="5sp"
+                android:padding="3sp"
                 android:text="@string/home"
                 android:textAlignment="gravity"
                 android:textSize="20sp" />
