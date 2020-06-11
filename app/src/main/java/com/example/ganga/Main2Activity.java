@@ -15,7 +15,10 @@ import androidx.fragment.app.FragmentTransaction;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.bumptech.glide.Glide;
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class Main2Activity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -25,6 +28,7 @@ public class Main2Activity extends AppCompatActivity implements NavigationView.O
     Fragment fragment = null;
     NavigationView navigationView;
     FragmentManager fragmentManager;
+    FirebaseAuth mAuth;
     FragmentTransaction fragmentTransaction;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,13 +69,33 @@ public class Main2Activity extends AppCompatActivity implements NavigationView.O
         fragmentTransaction=fragmentManager.beginTransaction();
         fragmentTransaction.add(R.id.container_fragment,fragment);
         fragmentTransaction.commit();
+
+
+
+
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_tool, menu);
+
         return true;
     }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId())
+        {
+            case R.id.acc:
+                fragmentManager = getSupportFragmentManager();
+                fragmentTransaction=fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.container_fragment,new ProfileFragment());
+                fragmentTransaction.commit();
+
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
 
     @Override
     public void onBackPressed(){

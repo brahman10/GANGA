@@ -25,19 +25,21 @@
                 android:layout_marginStart="8sp"
                 android:layout_marginTop="4sp"
                 android:text="GHaT"
+                android:autoSizeTextType="uniform"
                 android:textColor="#006400"
                 android:textAlignment="center"
-                android:textSize="70sp" />
+                android:textSize="60sp"/>
 
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="match_parent"
                 android:layout_height="43sp"
-                android:layout_marginTop="5sp"
+                android:layout_margin="5sp"
                 android:text="Ganga Heritage and Tributaries"
                 android:textColor="#008000"
                 android:textAlignment="center"
-                android:textSize="25sp" />
+                android:textSize="20sp"
+                android:autoSizeTextType="uniform"/>
 
             <ImageView
                 android:id="@+id/imageView3"
@@ -45,6 +47,7 @@
                 android:layout_height="314sp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="5sp"
+                android:adjustViewBounds="true"
                 android:focusable="true"
                 android:src="@drawable/logo1" />
 

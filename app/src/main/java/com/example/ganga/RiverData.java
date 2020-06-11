@@ -3,6 +3,8 @@ package com.example.ganga;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 public class RiverData extends AppCompatActivity {
@@ -19,6 +21,7 @@ public class RiverData extends AppCompatActivity {
         TextView ghatname = findViewById(R.id.riverghat);
         TextView length = findViewById(R.id.riverlen);
         TextView area = findViewById(R.id.riverarea);
+        ProgressBar progressBar = findViewById(R.id.progressBar1);
 
 
         Bundle bun = getIntent().getExtras();
@@ -30,6 +33,7 @@ public class RiverData extends AppCompatActivity {
         ghat = bun.getString("ghat");
         len = bun.getString("Length");
         ar = bun.getString("Area");
+         progressBar.setVisibility(View.GONE);
 
 
         name.setText(rivername);

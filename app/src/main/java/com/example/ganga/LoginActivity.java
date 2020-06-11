@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
@@ -65,7 +66,6 @@ public class LoginActivity extends AppCompatActivity {
     }
     @Override
     protected void onStart() {
-        super.onStart();
 
         //if the user is already signed in
         //we will close this activity
@@ -74,6 +74,8 @@ public class LoginActivity extends AppCompatActivity {
             finish();
             startActivity(new Intent(this, ProfileDisplay.class));
         }
+
+        super.onStart();
     }
 
 
@@ -113,6 +115,7 @@ public class LoginActivity extends AppCompatActivity {
                             Log.d(TAG, "signInWithCredential:success");
                             FirebaseUser user = mAuth.getCurrentUser();
 
+
                             Toast.makeText(LoginActivity.this, "User Signed In", Toast.LENGTH_SHORT).show();
                             finish();
                             startActivity(new Intent(LoginActivity.this, ProfileDisplay.class));
@@ -137,5 +140,11 @@ public class LoginActivity extends AppCompatActivity {
 
         //starting the activity for result
         startActivityForResult(signInIntent, RC_SIGN_IN);
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        startActivity(new Intent(LoginActivity.this,Main2Activity.class));
     }
 }
