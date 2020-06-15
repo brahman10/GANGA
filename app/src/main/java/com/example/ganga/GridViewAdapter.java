@@ -54,7 +54,6 @@ public class GridViewAdapter extends BaseAdapter {
         Glide.with(convertView).load(s.getImageUrl()).into(img);
 
 
-
         return convertView;
     }
 }

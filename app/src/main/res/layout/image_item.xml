@@ -10,11 +10,18 @@
         android:orientation="vertical">
 
         <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/hidden"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
             android:id="@+id/image_view_upload"
             android:layout_width="match_parent"
             android:layout_height="253dp"
             android:padding="5dp"
             android:scaleType="centerCrop"/>
+
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>
